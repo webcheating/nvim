@@ -16,21 +16,10 @@
 
 ---
 
-### what's in here
-
-```
-lsp + completion      telescope + neo-tree      rust/go/ts/c++
-lazygit + diffview    ai (avante/codecompanion) remote dev (distant)
-google calendar       obsidian integration      discord presence
-animations            smear cursor              a duck
-```
-
----
-
 ### install
 
 ```sh
-git clone git@github.com:vmfunc/nvim.git ~/.config/nvim
+git clone git@github.com:webcheating/nvim.git ~/.config/nvim
 nvim
 ```
 
@@ -54,6 +43,16 @@ leader is `space`. press it and wait for which-key.
 
 | key | action |
 |-----|--------|
+| `q` | start inserting text before the cursor |
+| `c` | start inserting text after the cursor |
+| `w` | move cursor up |
+| `s` | move cursor down |
+| `a` | move cursor left |
+| `d` | move cursor right |
+| `Shift+w` | move cursor up 5 lines |
+| `Shift+s` | move cursor down 5 lines |
+| `Shift+a` | go to the previous word |
+| `Shift+d` | go to the next word |
 | `ctrl+p` | find files |
 | `ctrl+b` | toggle tree |
 | `ctrl+`` | terminal |
@@ -62,19 +61,6 @@ leader is `space`. press it and wait for which-key.
 | `space o` | obsidian |
 
 full list in `lua/config/keymaps.lua`
-
----
-
-### google calendar
-
-optional. needs oauth credentials.
-
-```sh
-cp .env.example .env
-# add your google cloud oauth credentials
-```
-
-see [google cloud console](https://console.cloud.google.com/) to create a project and enable calendar api.
 
 ---
 
