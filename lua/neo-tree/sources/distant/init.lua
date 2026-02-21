@@ -43,7 +43,7 @@ end
 
 -- Fetch and display directory contents
 local function get_items(state, parent_id, path_to_reveal, callback)
-  local path = parent_id or state.path or "/home/celeste"
+  local path = parent_id or state.path or "/home/user0o1"
   state.path = state.path or path
 
   local ok, api = pcall(require, "distant.api")
@@ -110,7 +110,7 @@ local function get_items(state, parent_id, path_to_reveal, callback)
 end
 
 M.navigate = function(state, path, path_to_reveal, callback)
-  state.path = path or state.path or "/home/celeste"
+  state.path = path or state.path or "/home/user0o1"
   get_items(state, nil, path_to_reveal, callback)
 end
 

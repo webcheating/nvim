@@ -16,8 +16,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = "vault",
-        path = "~/vault",
+        name = "cybersec",
+        path = "~/Documents/obsidian/cybersec",
       },
     },
     daily_notes = {

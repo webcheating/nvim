@@ -97,8 +97,8 @@ return {
     },
     cmd = { "CodeCompanion", "CodeCompanionChat", "CodeCompanionActions" },
     keys = {
-      { "<leader>ai", "<cmd>CodeCompanionChat Toggle<cr>", desc = "AI Chat" },
-      { "<leader>aa", "<cmd>CodeCompanionActions<cr>", desc = "AI Actions" },
+      { "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "AI Chat" },
+      { "<leader>aA", "<cmd>CodeCompanionActions<cr>", desc = "AI Actions" },
       { "<leader>ac", "<cmd>CodeCompanionChat Add<cr>", mode = "v", desc = "Add to AI Chat" },
     },
     opts = {
